@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout";
 import Product from "../../components/Product";
-/* import ShoppingCart from "../../components/ShoppingCart"; */
+import ShoppingCart from "../../components/ShoppingCart";
 import { getProductData, getPathsFromTitle } from "../../lib/products";
 
 /* Acá estamos generando rutas dinamicas para cada uno de nuestros productos */
@@ -9,7 +9,7 @@ export default function ProductPage({ productInfo }) {
     return (
         <Layout product={productInfo.data.title}>
             <Product product={productInfo.data} showAs="Page" />
-            {/* <ShoppingCart /> */}
+            <ShoppingCart />
         </Layout>
     );
 }

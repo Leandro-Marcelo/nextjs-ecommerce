@@ -1,15 +1,15 @@
 import Link from "next/link";
-
 import style from "../styles/Menu.module.css";
-/* import { useAppContext } from "./stateWrapper"; */
+import ShoppingCartContext from "../context/ShoppingCartContext";
+import { useContext } from "react";
 
 export default function Menu() {
-    /* const cart = useAppContext();
+    const cart = useContext(ShoppingCartContext);
 
     function handleClickCart(e) {
         e.preventDefault();
         cart.openCart();
-    } */
+    }
     return (
         <nav className={style.menu}>
             <div>
@@ -26,13 +26,10 @@ export default function Menu() {
                 </Link>
             </div>
 
-            {/* <div>
-                <a href="#" className={style.link} onClick={handleClickCart}>
-                    Carrito ({cart.getNumberOfItems()})
-                </a>
-            </div> */}
             <div>
-                <a>Carrito</a>
+                <a href="#" className={style.link} onClick={handleClickCart}>
+                    Carrito ({cart.getNumberOfProducts()})
+                </a>
             </div>
         </nav>
     );

@@ -1,7 +1,7 @@
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 import Product from "../../components/Product";
 import { getProducts } from "../../services/storeService";
-import styleProduct from "../../styles/product.module.css";
+import styleProduct from "../../styles/Product.module.css";
 
 /* Ahora nosotros tradicionalmente en React, estaríamos utilizando un useeffect, utilizar un fetch etc. La realidad es que NextJS ya nos proporciona una función que se va a ejecutar en el tiempo de compilación cuando estemos generando nuestros archivos finales y lo que va hacer es correr esa función va a ordenar toda la información y al final la va a inyectar dentro de nuestra página. Entonces no vamos a utilizar useefect para la obtención de datos. */
 

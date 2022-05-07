@@ -1,8 +1,8 @@
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Product from "../components/Product";
 import style from "../styles/Home.module.css";
 import { getLatestProducts } from "../services/storeService";
-import styleProduct from "../styles/product.module.css";
+import styleProduct from "../styles/Product.module.css";
 
 export default function Home({ latestProducts }) {
     return (

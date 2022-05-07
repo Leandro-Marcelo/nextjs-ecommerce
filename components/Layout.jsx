@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Menu from "./Menu.jsx";
 import style from "../styles/Layout.module.css";
-/* import ShoppingCart from "./ShoppingCart"; */
+import ShoppingCart from "./ShoppingCart";
 
 export default function Layout({ children, title }) {
     return (
@@ -19,7 +19,7 @@ export default function Layout({ children, title }) {
             <Menu />
 
             <div className={style.container}>{children}</div>
-            {/* <ShoppingCart /> */}
+            <ShoppingCart />
         </div>
     );
 }
