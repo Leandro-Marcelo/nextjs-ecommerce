@@ -1,16 +1,36 @@
+/* NextJS de forma nativa soporta css.modules, y es lo que vamos a estar utilizando */
+/* Son los archivos globales que aplican independientemente de donde se encuentre tu componente */
+/* Si tu quieres crear estilos basados en el alcance de solamente un componente, vamos acrearlo como Home.module.css el cual hace referencia al componente Home */
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #efefef;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 62px;
+    margin: 20px 0 0 0;
+}
+
+.btn-cart {
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
 }
