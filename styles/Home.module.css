@@ -4,7 +4,8 @@
 
 .banner {
     background-color: black;
-    background-image: url(../public/img/banner.webp);
+    /* ../public/img/banner.webp */
+    background-image: url(https://i.imgur.com/ON0gRzP.jpg);
     background-size: cover;
     height: 500px;
 
