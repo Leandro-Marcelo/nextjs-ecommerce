@@ -2,6 +2,9 @@
 // * Ahora bien, si tuviera un backend, un servidor web o una API, aquí mandaríamos a llamar a nuestros datos
 
 export async function getProducts() {
+    console.log(`LEAAAN`);
+
+    console.log(`LEAAN:     ${process.env.VERCEL_URL}`);
     /* http://localhost:3000 */
     const request = await fetch(`${process.env.VERCEL_URL}/api/products`);
 
