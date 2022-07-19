@@ -6,6 +6,8 @@ export async function getProducts() {
     console.log(`ERRRRRRRRRRRRRRRRRRRRRRRROOOOOOOOOOOOOOOOOORRRRRRRRR`);
     console.log(request);
     const products = await request.json();
+    console.log(`ERRRRRRRRRRRRRRRRRRRRRRRROOOOOOOOOOOOOOOOOORRRRRRRRR`);
+    console.log(products);
 
     return products;
 }
