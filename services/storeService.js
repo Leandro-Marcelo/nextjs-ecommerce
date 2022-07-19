@@ -2,15 +2,13 @@
 // * Ahora bien, si tuviera un backend, un servidor web o una API, aquí mandaríamos a llamar a nuestros datos
 
 export async function getProducts() {
-    /* console.log(`LEAAAN`);
+    const request = await fetch(
+        `https://nextjs-ecommerce-henna.vercel.app/api/products`
+    );
 
-    console.log(`LEAAN:     ${process.env.VERCEL_URL}`);
-    http://localhost:3000
-    const request = await fetch(`${process.env.VERCEL_URL}/api/products`);
+    const products = await request.json();
 
-    const products = await request.json(); */
-
-    const products = [
+    /* const products = [
         {
             id: 0,
             title: "Figurita octocat",
@@ -76,7 +74,7 @@ export async function getProducts() {
             description:
                 "While there’s nothing like an original black GitHub hoodie, these new pullover hoodies are an instant classic. Featuring tone-on-tone embroidered Invertocats on the chest and wrist, these understated hoodies will have you looking so fresh and so clean (and so warm!).",
         },
-    ];
+    ]; */
 
     return products;
 }
