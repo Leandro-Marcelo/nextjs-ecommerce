@@ -1,7 +1,32 @@
-import Link from "next/link";
-import style from "../styles/Menu.module.css";
+// Components
+
+// Config
+
+// Contexts
 import ShoppingCartContext from "../context/ShoppingCartContext";
+
+// Css Modules
+import style from "../styles/Menu.module.css";
+
+// Icons
+
+// Img
+
+// Libs
+
+// NextJS
+import Link from "next/link";
+
+// React
 import { useContext } from "react";
+
+// React Router Dom
+
+// Redux Toolkit
+
+// Services
+
+// Toast
 
 export default function Menu() {
     const cart = useContext(ShoppingCartContext);
@@ -10,6 +35,7 @@ export default function Menu() {
         e.preventDefault();
         cart.openCart();
     }
+
     return (
         <nav className={style.menu}>
             <div>

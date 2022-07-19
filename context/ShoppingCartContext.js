@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
-/* Lo que va dentro de createContext es simplemente la definición de las propiedades de este objeto, cuando vayamos a llamar la función, vamos a pasarle la función ya implementada */
+// ? Lo que va dentro de createContext es simplemente la definición de las propiedades de este objeto, cuando vayamos a llamar la función, vamos a pasarle la función ya implementada
 const ShoppingCartContext = createContext();
 
 function ShoppingCartProvider({ children }) {
@@ -15,16 +15,14 @@ function ShoppingCartProvider({ children }) {
         setIsOpen(false);
     }
 
-    /* ecommerce de JM explicaba una lógica */
-
     function handleAddProductToCart(product) {
-        /* Primero necesito un temporal */
+        // ? Primero necesito un temporal
         const temp = [...products];
-        /* Ahora necesito agregar el producto, pero primero necesito saber si ya existe en mi carrito de compras */
+        // ? Ahora necesito agregar el producto, pero primero necesito saber si ya existe en mi carrito de compras
         const found = temp.find((el) => el.id === product.id);
-        /* si el producto ya se encuentra entonces solo vamos actualizar la propiedad de cantidad, en caso contrario voy agregar ese producto al carrito y establecerle la cantidad como uno */
+        // ? si el producto ya se encuentra entonces solo vamos actualizar la propiedad de cantidad, en caso contrario voy agregar ese producto al carrito y establecerle la cantidad como uno
         if (found) {
-            /* qty significa cantidad */
+            // ? qty significa cantidad
             found.qty++;
         } else {
             product.qty = 1;
@@ -56,6 +54,6 @@ function ShoppingCartProvider({ children }) {
     );
 }
 
-/* lo exportamos acá bajo como aprendimos de JM y como lo hacemos en backend con module.exports xd */
+// ? lo exportamos acá bajo como aprendimos de JM y como lo hago en el backend con module.exports xd
 export { ShoppingCartProvider };
 export default ShoppingCartContext;

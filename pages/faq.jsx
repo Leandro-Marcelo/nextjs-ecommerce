@@ -1,5 +1,30 @@
+// Components
 import Layout from "../components/Layout";
+
+// Config
+
+// Contexts
+
+// Css Modules
 import style from "../styles/FAQ.module.css";
+
+// Icons
+
+// Img
+
+// Libs
+
+// NextJS
+
+// React
+
+// React Router Dom
+
+// Redux Toolkit
+
+// Services
+
+// Toast
 
 export default function FAQ() {
     return (

@@ -1,11 +1,35 @@
-import Link from "next/link";
-import { convertToPath } from "../lib/products";
-import style from "../styles/Product.module.css";
-import Image from "next/image";
+// Components
 import AddProductBtn from "./AddProductBtn";
 
-/* Aquí vamos a renderizar nuestro producto, pero aquí podemos hacer varias cosas por ejemplo, podríamos mostrar nuestro producto en diferentes componentes dependiendo la presentación que queremos dar. A que me refiero, cuando tenemos nuestra tienda y vemos los productos va haber un diseño específico, cuando yo agregue ese producto a mi carrito de compras va haber otro diseño, y cuando yo le de click para ir a su página o a su ruta personalizada podría utilizar ese mismo componente u otro para mostrar esa información. La realidad es que ahí podemos hacer 3 componentes o podríamos hacer que un solo componente renderizara 3 diseños diferentes, podríamos hacerlo así para ahorrarnos el estar definiendo 3 componentes. */
-/* props: product:product, qty:, showAs:como mostrar */
+// Config
+
+// Contexts
+
+// Css Modules
+import style from "../styles/Product.module.css";
+
+// Icons
+
+// Img
+
+// Libs
+import { convertToPath } from "../lib/products";
+
+// NextJS
+import Image from "next/image";
+import Link from "next/link";
+
+// React
+
+// React Router Dom
+
+// Redux Toolkit
+
+// Services
+
+// Toast
+
+// ? Aquí voy a renderizar mi producto, pero aquí puedo hacer varias cosas por ejemplo, podría mostrar mi producto en diferentes componentes dependiendo la presentación que quiero dar. A que me refiero, Lean, cuando un usuario entre a mi tienda y vea los productos va haber un diseño específico, cuando yo el agregue ese producto a su carrito de compras va haber otro diseño, y cuando le de click para ir a su página o a su ruta personalizada podría utilizar ese mismo componente u otro para mostrar esa información. La realidad es que ahí puedo hacer 3 componentes o podría hacer que un solo componente renderizara 3 diseños diferentes, podría hacerlo así para ahorrarme el estar definiendo 3 componentes.
 export default function Product({ product, qty = 0, showAs }) {
     if (showAs === "Page") {
         return (
@@ -46,7 +70,7 @@ export default function Product({ product, qty = 0, showAs }) {
                 <div>
                     <div>{product.title}</div>
                     <div>${product.price}</div>
-                    {/* aquí valido la cantidad, ya que si la cantidad es 0 no debería ni mostrar las unidades ni tampoco el subtotal */}
+                    {/*//? aquí valido la cantidad, ya que si la cantidad es 0 no debería ni mostrar las unidades ni tampoco el subtotal */}
                     {qty === 0 ? "" : <div>{qty} units</div>}
 
                     {qty === 0 ? (

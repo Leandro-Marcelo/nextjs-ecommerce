@@ -1,6 +1,6 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+// * Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-/* vamos a utilizar esta estructura para simular que estamos llamando a una API, teorícamente lo que tendríamos que hacer pues si sería hacer un fetch a un servidor web, a un endpoint, a una API, etc. Pero como aun no implemento el backend, voy a simular un backend */
+// ? Voy a utilizar esta estructura para simular que estoy llamando a una API, teorícamente lo que tendría que hacer pues si sería hacer un fetch a un servidor web, a un endpoint, a una API, etc. Pero como aun no implemento el backend, voy a simular un backend
 export default function handler(req, res) {
     res.status(200).json([
         {
@@ -15,7 +15,7 @@ export default function handler(req, res) {
             id: 1,
             title: "Gorra",
             price: 200,
-            /* de esta forma estoy haciendo una solicitud http a localhost:3000/img/octocat.webp, si nosotros utilizaramos otro servidor web para almacenar imagenes u otro servicio en la nube, aquí tendríamos que colocar toda la dirección. Como acá estamos simulando una API, no podemos utilizar una dirección relativa a nuestro proyecto, tenemos que usar toda la URL absoluta porque de esa forma vamos a utilizar otro componente que tiene NextJS para poder renderizar estas imagenes. */
+            // ? Estoy haciendo una solicitud http a localhost:3000/img/octocat.webp, ya que si utilizara otro servidor web para almacenar imagenes u otro servicio en la nube, aquí tendría que colocar toda la dirección. Como acá estoy simulando una API, no puedo utilizar una dirección relativa a mi proyecto, tengo que usar toda la URL absoluta porque de esa forma voy a utilizar otro componente que tiene NextJS para poder renderizar estas imagenes.
             image: "http://localhost:3000/img/mug.webp",
             description:
                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia maiores praesentium vitae sequi consectetur itaque ea inventore architecto nemo. Enim id perspiciatis minus modi qui at commodi quos quisquam similique!",
